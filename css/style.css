@@ -1,0 +1,368 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    height: 50%;
+    position: relative;
+  }
+.landing{
+    height:100vh;
+    width: 100%;
+    background-image:url(/img/firstSection.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+.nav-links ul li::after{
+content:'';
+width:0%;
+height: 2px;
+background: #f54a26;
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.nav-links i{
+    color: #fff;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+.header .logo span{
+color:  #f54a26;
+margin-left: 0.2rem;
+
+}
+.landing-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: 20rem;
+    margin: 8rem 0;
+    color: #fff;
+    position: relative;
+
+}
+.p-1{
+    width: 30%;
+    font-size: clamp(0.5rem,0.9rem,1.1rem);
+}
+.p-1 i{
+    color: #f54a26;
+
+}
+.strong{
+font-size:2.5rem;
+margin-left:-3px;
+color: #f54a26;
+height:5px;
+width: 10px;
+letter-spacing:12px;
+text-transform: uppercase;
+font-weight: 900;
+}
+.rotate_word{
+    position: relative;
+    width: 100%;
+}
+.rotate_word p{ 
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    transform: rotate(90deg);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;
+}
+.special_word{
+    position: absolute;
+    bottom: -2rem;
+    left: 2rem;
+    color: rgb(12, 11, 11);
+    font-weight: 900;
+    font-size: 10rem;
+}
+.features{
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+    background:rgb(12, 11, 11);
+}
+.h-features{
+    color: #fff;
+    font-size: 2.5rem;
+    font: weight 2.5rem;
+}
+.p-features{
+    color: #fff;
+    font-size: 1rem;
+}
+.ul-feat i{
+    color: #f54a26;
+    font-size: 2.5rem;
+    
+}
+.ul-feat{
+
+ display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.p-feat1{
+    color: #fff;
+    font-size: 1rem;
+}
+.ul-feat h3{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.btb{
+    display: flex;
+    font:#fff;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+}
+.btb-left{
+    background-color:rgb(27, 26, 26);
+    font: #fff;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+.h1-btb{
+    color: #fff;
+    font: 2rem;
+    z-index: 10;
+}
+.span-btb{
+    font-size:5rem;
+    font-weight: 900;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#f54a26;
+    position: absolute;
+    top:5rem;
+    left: 12rem;
+    opacity: 0.5;
+}
+.p-btb{
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom:10% ;
+}
+.btb-right{
+    width: 50%;
+}
+.BTB-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.button-btb{
+    color: #fff;
+    border-radius: 1rem;
+    background-color: #f54a26;
+    padding: 10px;
+    margin: 5px;
+}
+.quality{
+    background:url(/img/lastSection.jpg);
+    height: 110vh;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.div-quality{
+    color: #fff;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size:1rem;
+}
+.quality i{
+    font-size: 3rem;
+    margin: 1rem;
+    font-weight: 700;
+    color: #fff;
+}
+.production{
+    background-color: rgb(12, 11, 11);
+    text-align: center;
+    color: #fff;
+    min-height: 50vh;
+    padding: 2rem;
+}
+
+
+.ul-pro{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    padding: 3rem 0;
+    list-style: none;
+    
+}
+.img-protein{
+    width:60%;
+}
+.p-production{
+    font-size: 1.5rem;
+}
+.protein-products{
+    font-size: 2rem;
+    margin: 0;
+}
+.planning{
+background-color:rgb(7, 5, 5) ;
+color: #fff; 
+min-height: 80vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.planning .left{
+    width: 40%;
+    margin: 2rem auto;
+    position: relative;
+}
+.planning .left .span-btb{
+    position: absolute;
+    top: -3rem;
+    left:-4rem;
+    font-size:5rem;
+}
+.choose-word{
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.planing-items{
+justify-content: space-between;
+display: flex;
+width: 100%;
+height:100% ;
+}
+.planing-item{
+    margin-top: 3%;
+    width: 30%;
+    height:30% ;
+    border-radius: 5%;
+    background:rgb(27, 26, 26) ;
+    border-width:10%;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 0; 
+}
+.price-plan{
+    font-size: 3.5rem;
+    margin-right:10% ;
+}
+.font-awson{
+    background-color: #f54a26;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    color: #fff;    
+}
+.contact{
+    background-color:rgb(32, 30, 30) ;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+    justify-content:space-between;
+    align-items:center
+}
+
+.art-contact{
+    color: #fff;
+}
+.first p{
+    font-size: 1.5rem;
+    margin-bottom:2% ;
+    
+}
+.blas{
+    color: #f54a26;
+}
+.scand p{
+    font-size:1.5rem ;
+    border-bottom:10%;
+    margin-bottom:5% ;
+
+}
+
+.march{
+    margin-bottom: 10%;
+    font-size:1.5rem ;
+}
+.forde{
+    margin-bottom:2% ;
+}
+.fotter{
+    background-color:rgb(12, 11, 11);
+    color: #fff;
+    height: 80px;
+}
+.art-fotter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:1rem 0 ;
+}
+.div-fotter{
+    font-size:1.5rem ;
+}
+.last-div{
+    margin-left:50% ;
+    font-size:1.5rem ;
+}
+.last-div i{
+    break-inside:10% ;
+    color: #fff;
+}
