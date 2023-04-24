@@ -307,15 +307,18 @@ height:100% ;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    color: #fff;    
+    color: #fff; 
+    height:20% ;   
 }
 .contact{
     background-color:rgb(32, 30, 30) ;
-    display: flex;
-    flex-direction: row;
-    padding: 1rem 0;
-    justify-content:space-between;
-    align-items:center
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-content: center;
+    justify-content: center;
+    align-items: start;
+    margin: 0 auto;
+    padding: 3rem ;
 }
 
 .art-contact{
@@ -331,9 +334,10 @@ height:100% ;
 }
 .scand p{
     font-size:1.5rem ;
-    border-bottom:10%;
-    margin-bottom:5% ;
-
+    border-bottom:2px solid #fff;
+    margin-bottom:1rem ;
+    padding: 0.5rem 0;
+    width: 80%;
 }
 
 .march{
@@ -342,6 +346,16 @@ height:100% ;
 }
 .forde{
     margin-bottom:2% ;
+}
+
+.in-put input ,.in-put textarea{
+    background-color: #202020;
+    width: 100%;
+    resize: none;
+    margin-bottom: 1rem;
+}
+.in-put{
+width: 60%;
 }
 .fotter{
     background-color:rgb(12, 11, 11);
